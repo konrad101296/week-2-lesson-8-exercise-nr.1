@@ -1,5 +1,5 @@
-﻿int liczbapierwsza = 0;
-int reszta = 0;
+int primeNumbersCount= 0;
+int dividersCount= 0;
 for (int i = 2; i <= 100; i++)
 {
 
@@ -7,13 +7,13 @@ for (int i = 2; i <= 100; i++)
     {
         if (i % j == 0)
         {
-            reszta++;
+            dividersCount++;
         }
-        if (reszta == 2 && i == j)
+        if (dividersCount == 2 && i == j)
         {
-            liczbapierwsza++;
+            primeNumbersCount++;
         }
     }
-    reszta = 0;
+    dividersCount = 0;
 }
-Console.WriteLine($"W zakresie od 0 do 100 jest {liczbapierwsza} liczb pierwszych");
+Console.WriteLine($"In the range of 1 to 100 is {primeNumbersCount} prime numbers");
